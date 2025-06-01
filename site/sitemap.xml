@@ -441,11 +441,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://saeidamiri1.github.io/python-training-platform/note1/</loc>
-         <lastmod>2025-06-01</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://saeidamiri1.github.io/python-training-platform/python_projects/overview/</loc>
          <lastmod>2025-06-01</lastmod>
          <changefreq>daily</changefreq>
@@ -457,6 +452,11 @@
     </url>
     <url>
          <loc>https://saeidamiri1.github.io/python-training-platform/python_projects/posts/optimization/</loc>
+         <lastmod>2025-06-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://saeidamiri1.github.io/python-training-platform/workshop/</loc>
          <lastmod>2025-06-01</lastmod>
          <changefreq>daily</changefreq>
     </url>

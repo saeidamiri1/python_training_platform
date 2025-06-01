@@ -264,8 +264,8 @@ nav:
     - python_projects/overview.md
     - python_projects/posts/crime-mtl-pattern.md
     - python_projects/posts/optimization.md
-  - Note1: 
-    - "Overview": 'note1/index.md'
+  - Workshop: 
+    - "Overview": 'workshop/index.md'
   # - Work shop:
   #     - "<b> Overview </b>": work_shop/index.md
   #     - "<b>Part I:</b>": 
