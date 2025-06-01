@@ -16,7 +16,7 @@ CHD_plot=p9.ggplot(data=CHD)
 CHD_plot.save("plotnine0.png", dpi=300)
 -->
 
-![](plotnine/plotnine0.png)
+![](./ch4_plotnine/plotnine0.png)
 
 
 * Define aesthetics using `aes` and specify your arguments. The most important aesthetics include: `x`, `y`, `alpha`, `color`, `colour`, `fill`, `linetype`, `shape`, `size`, and `stroke`. To create variations of the plot with different parameters, you can assign it to a variable.
@@ -30,7 +30,7 @@ CHD_plot.show()
 CHD_plot.save("plotnine1.png", dpi=300)
 -->
 
-![](plotnine/plotnine1.png)
+![](./ch4_plotnine/plotnine1.png)
 
 * Specify what you want to display and use the `+` operator to add layers and customize your plot.
 
@@ -43,7 +43,7 @@ CHD_plot.show()
 CHD_plot.save("plotnine2.png", dpi=300)
 -->
 
-![](plotnine/plotnine2.png)
+![](./ch4_plotnine/plotnine2.png)
 
 You can easily add scale and define label: 
 
@@ -56,7 +56,7 @@ CHD_plot=CHD_plot+ p9.geom_point(alpha=0.15)+ p9.xlab("median_income") +
 CHD_plot.save("plotnine3.png", dpi=300)
 -->
 
-![](plotnine/plotnine3.png)
+![](./ch4_plotnine/plotnine3.png)
 
 
 * After creating your plot, you can save it to a file in your favourite format
@@ -77,7 +77,7 @@ CHD_bar=(p9.ggplot(data=CHD,mapping=p9.aes(x='famlev'))+ p9.geom_bar())
 CHD_bar.save("plotnine4.png", dpi=300)
 -->
 
-![](plotnine/plotnine4.png)
+![](./ch4_plotnine/plotnine4.png)
 
 ## Plotting distributions
 * A boxplot can be created using `geom_boxplot()`:
@@ -94,10 +94,11 @@ CHD_dist=(p9.ggplot(data=CHD,
 CHD_dist.save("plotnine5.png", dpi=300)
 -->
 
-![](plotnine/plotnine5.png)
+![](./ch4_plotnine/plotnine5.png)
 
 * To add points behind the boxplot, you can use geom_jitter() to plot the points with some random noise to avoid overlapping points. This will create a visual representation of the data points behind the boxplot. Here's an example:
 
+```python
 CHD_dist=(p9.ggplot(data=CHD,
            mapping=p9.aes(x='famlev',
                           y='median_income'))
@@ -105,9 +106,10 @@ CHD_dist=(p9.ggplot(data=CHD,
     + p9.geom_jitter(alpha=0.1, color="green")
     + p9.scale_y_log10()
  )
+```
 
 <!-- 
 CHD_dist.save("plotnine6.png", dpi=300)
 -->
 
-![](plotnine/plotnine6.png)
+![](./ch4_plotnine/plotnine6.png)

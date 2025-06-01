@@ -23,7 +23,6 @@ In [3]: %timeit 2+2
 
 More details can be found in [ipython documetation. ](https://ipython.readthedocs.io/)
 
-
 Instead of using the command line, you can choose from several useful editors for Python, such as [VS Code](https://code.visualstudio.com/), [PyCharm](https://www.jetbrains.com/pycharm/), [IPython](https://ipython.org/), [Jupyter](https://jupyter.org/), [Spyder](https://www.spyder-ide.org/)
 
 
@@ -31,8 +30,18 @@ Instead of using the command line, you can choose from several useful editors fo
 The Jupyter Notebook is a web-based interactive computational environment for programming, used to create and share documents containing live code, equations, visualizations, and narrative text. JupyterLab, the next-generation interface for Project Jupyter, offers a more flexible and powerful user experience. Jupyter saves files with the `.ipynb` extension, which stores the notebook's content. Some editors, such as VS Code (described below), support `.ipynb` files.
 
 ## VS Code
-VS Code editor is a free and modern  integrated development environment (IDE) developed by the Microsoft and   for Windows, Linux, macOS and web browsers which is used as an editor for coding, debugging, and managing projects in different programming languages, including Python. 
+VS Code is a free, modern, and powerful integrated development environment (IDE) developed by Microsoft. It is available for Windows, Linux, macOS, and even web browsers. VS Code is widely used for coding, debugging, and managing projects in various programming languages, including Python, Bash, and more.
 
-In the following Video, I present how I use vscode to do programming. 
+After spending a significant amount of time coding and editing with VS Code, I would like to share my setup and recommendations. Once you install it, follow these steps to optimize your experience:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/3xHFCpglNxA?si=2S6G0IptvNDfYBzj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+* Connect VSCode to GitHub for seamless version control.
+* Choose the right theme to enhance readability and comfort.
+* Install essential Python extensions, including: Python, Python Debugger, Python Indent
+* Install Python Snippets to speed up coding.
+* Install the Jupyter extension for interactive coding with Jupyter notebooks.
+
+By following these steps, you can make the most out of VS Code for your development needs!
+
+
+
+

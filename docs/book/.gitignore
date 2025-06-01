@@ -1,2 +1,4 @@
 # ignore ALL *.gitignore.py files
 *.gitignore.py
+
+temp/

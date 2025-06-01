@@ -31,7 +31,7 @@ To write the algorithm in code, we consider ![E_0=mc^2](https://latex.codecogs.c
 
 
 Define the function
-```
+```python
 def f(x):
     return x**4 - 3 * x**3+2
 
@@ -41,7 +41,7 @@ def df(x):
 
 To see the minimum of the function, plot it: 
 
-```
+```python
 from matplotlib import pyplot as plt
 import numpy as np 
 x_ran_0 = np.linspace(-7,7,100) 
@@ -56,7 +56,7 @@ plt.show(block=False)
 
 To see how the algorithm works, we can add the plot pf gradients along running the iterations:
 
-```
+```python
 import matplotlib as mpl
 
 x_s = -4 # Starting point
@@ -103,7 +103,7 @@ where ![eq4](https://latex.codecogs.com/svg.latex?\gamma) is called the step siz
 To write a simple code to find the minimum using the Gradient Descent consider ![eq5](https://latex.codecogs.com/svg.latex?f(x)=x^4-3x^2+2) that is already used for explaining the Newton-Raphson. 
 
 The plot of gradient can be obtained using running the following script:
-```
+```python
 import matplotlib as mpl
 
 x_s = -4 # Starting point

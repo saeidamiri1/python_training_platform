@@ -2,15 +2,8 @@
 title: Class as Decorator
 ---
 
-
-
 # Class as Decorator
-
-https://realpython.com/primer-on-python-decorators/#using-classes-as-decorators
-
-
-You can write the class as decorator, in this case you need take the function as an argumnet in `_init_`. Let 
-write a class that count the number of time that the class executed.
+You can write a class as a decorator, a technique where a class is used to modify the behavior of a function, similar to how a regular function decorator works. In this case, you need to take the function as an argument in `__init__`. Let’s write a class that counts the number of times the class method is executed.
 
 ```python
 class count_run:

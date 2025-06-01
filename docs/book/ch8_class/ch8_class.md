@@ -4,8 +4,9 @@ title: class and object
 
 # Class and object 
 ## introduction
-Python is an object-oriented programming language, and has strong tools working with different objects. If the structure is not defined, one can create own object (An object is simply a collection of data (variables) and functions ) which can be done using list;  
-the class can be used to present new structure for your data or change the existing one. It is very useful to tie  a certain data and functions together that act on the data; it is actually a pack of collection stuff like factory that has different department with well-planed task.    
+Python is an object-oriented programming language and provides powerful tools for working with various types of objects. When a suitable data structure is not already available, you can define your own object. An object is simply a collection of data (variables) and functions (methods) that operate on that data. While basic structures like lists can group values, classes allow you to define custom data structures or modify existing ones.
+
+Classes are particularly useful for combining related data and behavior, keeping everything organized and reusable. You can think of a class as a blueprint or a well-structured factory, where each component (like a department) has a clear and well-planned role.
 
 ```python
 class body(object):
@@ -24,7 +25,7 @@ print (SAM)
 bmi_body(SAM)
 ```    
 
-Or it can be simpified to
+Or, it can be simplified as follows:
 
 ```python
 class body(object):
@@ -40,8 +41,7 @@ print (SAM)
 bmi_body(SAM)
 ```
 
-Example: American present the data as
-Month/Day/Year. Write a fucntion represent it with Candaian style.
+Let's explain it further with an example. In the U.S., dates are typically written as Month/Day/Year. Write a function that converts this format to the Canadian style, which is Day/Month/Year.
 
 ```python
 class dateg(object):
@@ -58,14 +58,15 @@ print (mybirt)
 ca_date(mybirt)
 ```
 
-The class creates a new local namespace and stores all its attributes which may be data or functions.  
+A class creates a new local namespace and stores all its attributes, which can include both data and functions.
 
 ```python
 print(dateg.__doc__)
 ```
 
 ## initialize
-Sometime is better to initialize the variables in the begining, it can be done using `__init__`
+Sometimes it's better to initialize variables at the beginning, which can be done using the `__init__` method.
+
 ```python
 class dateg(object):
     """Define class"""
@@ -86,7 +87,7 @@ print (mybirt)
 ca_date(mybirt)
 ```
 
-Since the value has a limitation, we need to add a boundary to it. It can be done using the seeter and getter: 
+Since the value has limitations, we need to enforce boundaries. This can be done using setter and getter methods.
 
 ```python
 class body(object):
@@ -117,10 +118,9 @@ print(SAM.get_height)
 print(SAM.bmi_body)
 ```
 
-Note: In Python, the underscore `_` at the beginning  means it is a private variable.
+Note: In Python, a leading underscore (_) before a variable name is a convention that indicates it is intended to be private, meaning it should not be accessed directly from outside the class.
 
-Obviously, the code must be written carefully, otherwise it generates many errors. To overcome the problem, one can use the `property` class. The following code shows how `property`avoid creating new names for the getters and setter. 
-
+Clearly, the code must be written carefully to avoid errors. To help with this, Python provides the property class, which allows you to define getters and setters without creating separate method names. The following example shows how property simplifies access and updates to class attributes.
 
 ```python
 class body(object):
@@ -154,8 +154,7 @@ print(SAM.get_weight())
 print(SAM.bmi_body())
 ```
 
-Using the decorators can simplify the structure, a decorator is function that add new functionality to a function that is passed as arguments
-
+Using decorators can simplify the structure. A decorator is a function that adds new functionality to another function, which is passed as an argument.
 
 ```python
 class body(object):
@@ -188,7 +187,7 @@ print(SAM.weight)
 print(SAM.bmi_body())
 ```
 
-Example: Create a function create email for a new employee, 
+Let's explain it further with an example. Create a function to generate an email for a new employee.
 
 ```python
 class Create_employee:
@@ -209,7 +208,7 @@ new_emp_1.fullname
 ```
 
 
-Write a function to calculate mean  
+To practice further, let's write a function to calculate the mean (average) of a list of numbers.
 
 ```python
 class Mean(object):
@@ -232,7 +231,7 @@ aa.reset_states()
 
 
 ## Object presentation 
-To present the values object attributes, one can use the `__str__`, which is a [operator overloading](./operator_overloading.md) and is discussed in : 
+To display the values of an object's attributes, you can use the `__str__` method, which is an example of [operator overloading](./operator_overloading.md) and is discussed in:
 
 ```python
 class body(object):

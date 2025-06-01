@@ -3,84 +3,100 @@ title: Subprocess
 ---
 
 # Subprocess
-The subprocess module enable run shell command  
+The subprocess module allows you to spawn new processes, connect to their input/output/error pipes, and obtain their return codes.
 
-```{python, echo = FALSE, message = FALSE}
+## run
+`subprocess.run()` executes a shell command or external program from within a Python script.
+
+```python
+from subprocess import run,Popen,PIPE
+
 user_input = "-l"
-out = subprocess.run(["ls", user_input])
+out = run(["ls", user_input])
 if out.returncode == 0:
     print("was a success")
 else:  
     print("was unsuccesful")
 ```
 
-If you have sequence bash file, you can run the as below 
+The command must be provided as a list; if it's given as a string, use `.split()` to convert it.
 
-```{python, echo = FALSE, message = FALSE}
-methodproc1 = subprocess.run(["process_one.sh"], stdout=subprocess.PIPE)
+```python
+import shlex
+proc1="ls -l"
+out = run(shlex.split(proc1))
+```
+
+
+If you have a sequence of commands in a Bash script file, you can run it as shown below:
+
+```python
+methodproc1 = run(["process_one.sh"], stdout=PIPE)
 subprocess.run(["process_two.sh"], stdin=proc1.stdout)
 ```
 
-Run execute and wait until it finish, if you want do other stuuf while the process running use `popen`, and you should call Popen.communicate() to pass and receive data to your process. i.e. subprocess.run() just wraps Popen and Popen.communicate(). 
+## Popen
+Use `subprocess.run()` to execute a command and wait for it to finish. If you want to perform other tasks while the process is running, use `subprocess.Popen` instead. To send input to and receive
+output from the process, call `Popen.communicate()`. In fact, `subprocess.run()` is a higher-level wrapper around `Popen` and `Popen.communicate()`.
 
-
-
-instead run, one can Popen, which 
-
-It can be done using `popen`
-
+```python
 with Popen(["ls", user_input], stdout=PIPE) as proc: 
-   out = proc.stdout.readlines()
-   print(out)
+    out = proc.stdout.readlines()
+    print(out)
+
 
 for file in out:
     print(file.strip())
+```
 
+We often use try/except blocks to handle errors, as shown below.
 
-
-proc = subprocess.Popen(["ls", user_input], stdout=PIPE)
+```python
+proc = Popen(["ls", user_input], stdout=PIPE)
 try:    
     out,err = proc.communicate(timeout=30)
 except TimeoutExpired:
     proc.kill()  
     out,err= proc.communicate()
 
+print(out)
+print(err)
+```
 
-with Popen(["ls", "/a/bad/path"], stdout=PIPE, stderr=PIPE) as proc: 
+Let's test `ls ~` using  Popen: 
+
+
+```python
+import os 
+user_input = "~"  # or any path from user input
+expanded_path = os.path.expanduser(user_input)
+with Popen(["ls", expanded_path], stdout=PIPE, stderr=PIPE) as proc: 
      print(proc.stderr)
      print(proc.stdout)
 
-with Popen(["ls"], stdout=PIPE, stderr=PIPE) as proc: 
+with Popen(["ls", expanded_path], stdout=PIPE, stderr=PIPE) as proc: 
      print(proc.stderr.readlines())
      print(proc.stdout.readlines())
-
-
-the commenda must be as list, so if it is as a string, use split
-
-import shlex
-proc1="ls -l"
-with Popen(shlex.split(proc1), stdout=PIPE, stderr=PIPE) as proc: 
-     print(proc.stderr.readlines())
-     print(proc.stdout.readlines())
+```
 
 
 
+In larger programs, this is especially useful for writing pipelines. The following function runs an R script without exiting the Python environment.
 
- in other program, it is very useful for writting pipe lines, the follwoing function run an script written in R, without exiting Python.  
-
-```{python, echo = FALSE, message = FALSE}
+```python
 import subprocess
 subprocess.check_call(['/usr/local/bin/Rscript', './Desktop/rtest.R'])
 ```
 To save output of R in Python, run 
-```{python, echo = FALSE, message = FALSE}
+```python
 Out=subprocess.check_output(['/usr/local/bin/Rscript', './Desktop/rtest.R'])
 ```
 
 
-import subprocess
-
+To control error, use try\except: 
+```python
 try:
-    subprocess.check_output("ls",shell=True)
+    Out=subprocess.check_output(['/usr/local/bin/Rscript', './Desktop/rtest.R'])
 except subprocess.CalledProcessError as e:
     print(e.output)
+```

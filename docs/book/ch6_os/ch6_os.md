@@ -2,9 +2,11 @@
 title: OS
 ---
 # OS
+
 The module `os`  (`import os`) provides many useful functions to work with file and folders. The following provides the current working director
 
 ```python 
+import os
 print(os.getcwd())
 ```
 
@@ -22,7 +24,10 @@ filename = 'data.csv'
 os.path.join(base_path, filename)
 ```
 
+You can get the full (absolute) path of a file or folder:
+```python
 os.path.abspath(fullpath)
+```
 
 A list of useful function are presented in the below:  
 
@@ -45,6 +50,7 @@ A list of useful function are presented in the below:
 |os.chmod(file,permission)| Change permission of a file|
 |os.path.basename(path) |  Get file name without directory| 
 
+
 The following code extract the extention of file Get file name without directory
 ```python 
 fullpath = "/python/data.csv"
@@ -52,7 +58,7 @@ _, ext = os.path.splitext(fullpath)
 ext
 ```
 
-find all files that match a certain pattern in a directory tree.
+Find all files in a directory tree that match a specified pattern
 
 ``` python
 import os, fnmatch
@@ -65,7 +71,8 @@ for path, subdirs, files in os.walk('.'):
 
 ```
 
-One can can access to the environment variable using  `os.environ`, it is very useful to access user and key 
+You can access environment variables using `os.environ`, which is useful for retrieving values such as user names and API keys.
+
 ```python 
 db_user = os.environ.get('DB_USER')
 db_password = os.environ.get('DB_PASS')
@@ -85,14 +92,14 @@ os.system("ls -l > result.txt")
 ```
 
 ## shutil
-`shutil` provides more opertaions to work with files and folders. 
+`shutil` provides additional operations for working with files and directories.
 ```python
 from shutil import make_archive
 make_archive("data.csv", "gztar", "/My Drive/python")
 ```
 
 ## pathlib
-`pathlib` module do most of  'os'. 
+`pathlib` module do most of 'os'. 
 
 ```python
 from pathlib import Path
@@ -132,4 +139,3 @@ To extract a specific file.
 z.extract(testfile1.txt','myfolder')
 z.close()
 ```
-

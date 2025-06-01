@@ -5,8 +5,7 @@ title: Operator Overloading
 # Operator Overloading
 
 ## Introduction
-In python you can define a operator to achieve a specific computation, the following shows 
-how to add and subtract 
+In Python, you can define operators to perform specific computations. The following example shows how to define operators for addition and subtraction.
 
 ```python
 class point:
@@ -24,7 +23,9 @@ class point:
         y = self.y - other.y
         return point(x, y)
 ```
-functions can recalled vas below: 
+
+Functions can be called as shown below:
+
 ```python
 p1 = Point(1, 2)
 p2 = Point(2, 3)
@@ -34,7 +35,7 @@ print(p1.__add__(p2))
 print(Point.__add__(p1,p2))
 ```
 
-Special functions are listed in the below: 
+The special functions are listed below:
 
 |  |  | ||
 |--|--|--||
@@ -59,8 +60,7 @@ Special functions are listed in the below:
 
 
 ## call 
-When `__init__` is called, the object created and it can be initiated. 
-Sometimes, you want to redefine your object which can be done in `__call__`.
+When `__init__` is called, an object is created and initialized. Sometimes, you may want to redefine or modify the behavior of an object after it's created, which can be done using the `__call__` method.
 
 ``` python
 class test(object):
@@ -78,7 +78,8 @@ init1(7)
 init1(8)
 ```
 
-The following show how to use `__call__` to track the numebr of execution.  
+The following example shows how to use `__call__` to track the number of executions.
+
 
 ```python
 class counter:
@@ -94,7 +95,7 @@ counter()
 
 
 ## iter and next
-`iter` and `next` are very useful for go through one by one. `iter` assign an object as an iterator. The next() function returns the next item in an iterator. Its synatx is `next(iterator, default)` , the default is the value return if the iterator reach to its end. 
+`iter` and `next` are very useful for iterating through elements one by one. The `iter` function assigns an object as an iterator, while the next() function returns the next item from an iterator. Its syntax is `next(iterator, default)`, where default is the value returned when the iterator reaches its end.
 
 ```
 list = iter(["one", "two"])
@@ -106,7 +107,8 @@ x = next(list, "end")
 print(x)
 ```
 
-The following show how to generate Fibonachi series. 
+The following example shows how to generate the Fibonacci series.
+
 ```python
 class Fib:                                        
     def __init__(self, max):                      
@@ -129,9 +131,9 @@ for n in Fib(1000):
 
 
 ## classmethod and staticmethod
-These are a function in an object's namespace, accessible as an attribute. A class method gets the class (we usually call it cls) as the implicit first argument. A static method gets no implicit first argument (like a regular function).
+These are functions within an object's namespace, accessible as attributes. A class method receives the class itself (usually referred to as cls) as its implicit first argument, while a static method does not receive any implicit first argument (similar to a regular function).
 
-`@staticmethod` function is nothing more than a function defined inside a class. It is callable without instantiating the class first. It’s definition is immutable via inheritance.
+A `@staticmethod` is essentially a function defined inside a class that can be called without creating an instance of the class. Its behavior is not affected by inheritance, meaning it remains immutable in derived classes.
 
 ``` python 
 from datetime import date

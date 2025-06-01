@@ -3,7 +3,6 @@ title: Seaborn
 ---
 
 #  Seaborn
-
 Seaborn provides advanced graphical capabilities for creating sophisticated statistical visualizations with ease. It simplifies the process of generating complex plots from pandas DataFrames using simple commands. Let consider the `CHD_test.csv`, 
 
 ```python

@@ -1,7 +1,11 @@
-
+---
+title: Decorators
+---
 
 # Decorators
-Decoreators in Python allows you to take a function and add additional uses without modifying its structure (to wrap one function with another function), the following example show how add meesage befor and after exsiting function
+Decorators in Python allow you to enhance or modify the behavior of a function without changing its original structure. They work by "wrapping" one function with another. Decorators are a powerful and clean way to add functionality such as logging, access control, timing, or caching.
+
+The following example shows how to add a message before and after an existing function runs:
 
 ```Python
 def wrapper(func):
@@ -21,9 +25,19 @@ print_me = wrapper(print_me)
 print_me()   
 ```
 
+Decorators are often used in a simplified form with the `@decorator_name` syntax placed above the function definition.
 
-# Decorators with function's arguments
-If your function needs any argument, you can pass it using `*arg`" 
+```python
+@wrapper
+def print_me2():
+    print('ThAnKs')
+
+print_me2()
+```
+
+##  Function's arguments
+If your function takes arguments, you can pass them using `*args` in the decorator.
+
 ```Python
 def wrapper(func):
    def inner_fun(*arg):
@@ -38,20 +52,17 @@ def square(x):
 square(4)
 square = wrapper(square)
 square(4)   
-```
- `*args` allows you to pass the arguments of function to the inner wrapper function. 
 
-
-The decorator often simplify using`@name of decorator`
-
-```python
+# OR user simplifier
 @my_decor
 def square(x):
     print(x*x)
+square(4)
 ```
 
+In this function, `*args` is used to pass positional arguments from the original function to the inner wrapper function.
 
-Let define a function to check the time running a function: 
+To explore how `*args` works, let's define a decorator that measures the execution time of a function:
 
 ```python
 import time
@@ -72,7 +83,9 @@ def pow(a, b):
     
 pow(10, 10)
 ```
-Or you can do it as below where  `*args` and `**kwargs` are to support positional and named arguments of fn. 
+
+Alternatively, you can write it as shown below, where `*args` and `**kwargs` are used to support the positional and keyword arguments of the function being decorated.
+
 ```python
 def timeit(fn): 
     def get_time(*args, **kwargs): 
@@ -90,8 +103,9 @@ pow(10, 10)
 ```
 
 ## Chaining Decorators
-we can apply multiple decorators to a single function by placing them one after the other, with the most inner decorator being applied first.
-You use the apply multiple decorators on a single function. 
+We can apply multiple decorators to a single function by placing them one after the other, with the innermost decorator (the one closest to the function) being applied first.
+
+This allows you to layer functionality by using multiple decorators on a single function.
 
 ``` python
 def wrapper (fn): 
@@ -110,14 +124,12 @@ def pow(a, b):
 pow(10, 10)
 ```
 
-
 ## Defining Decorators With Arguments
+Sometimes, it’s useful to pass arguments to decorators. For example, the `@do_twice` decorator could be extended to a `@repeat(num_times)` decorator, where the number of times to execute the decorated function is given as an argument.
 
-Sometimes, it’s useful to pass arguments to your decorators. For instance, @do_twice could be extended to a @repeat(num_times) decorator. The number of times to execute the decorated function could then be given as an argument.
+To define a `@repeat` decorator, you could implement it like this: You can pass arguments to decorators in a similar manner.
 
-If you define @repeat, you could do something like this:
 
-You can pass arguments to the decorators as well
 ``` python 
 def repeat(num_times):
     def wrapper(func):
@@ -135,10 +147,8 @@ def print_me(x):
 print_me("Friend")
 ```
 
-# Creating Decorators With Optional Arguments
-
-The following example show how to run a decorator in a way that 
-if the argument is no given, ignore it.  
+## Optional Arguments
+The following example shows how to define a decorator that ignores the argument if it is not provided.
 
 ``` python
 def repeat(_func=None, *, num_times=2):
@@ -167,9 +177,8 @@ say_whee()
 greet("SAM")
 ```
 
-# Tracking State in Decorators
-Some times, you can keep the track of state in the decorator,  the following the  `inner` is the inner function  and `inner.num` keep
-the track of run
+## Tracking State
+Sometimes, you can keep track of the state within the decorator. In the following example, `inner` is the inner function, and `inner.num` keeps track of the number of times the function has been called.
 
 
 ```python 
@@ -185,5 +194,3 @@ def count_runs(func):
 def print_me():
      print("ThAnKs")
 ```
-
-

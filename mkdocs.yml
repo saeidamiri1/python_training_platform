@@ -192,68 +192,74 @@ nav:
             - "-- Scope and namespace":  book/ch1_primer/ch1_scope_and_namespace.md
             - "-- Editor":               book/ch1_primer/ch1_editor.md
             - "-- <em> Challenges</em>": book/ch1_primer/ch1_challenges.md            
-        - "Chapter 2: Numpy": 
-            - "<b>Overview</b>":         book/ch2_numpy/ch2_overview.md
-            - "-- Numpy":                book/ch2_numpy/ch2_numpy.md
-            - "-- <em> Challenges</em>": book/ch2_numpy/ch2_challenges.md
+        - "Chapter 2: Computation": 
+            - "<b>Overview</b>":         book/ch2_computation/ch2_overview.md
+            - "-- Numpy":                book/ch2_computation/ch2_numpy.md
+            - "-- Scipy":                book/ch2_computation/ch2_scipy.md
+            - "-- <em> Challenges</em>": book/ch2_computation/ch2_challenges.md
         - "Chapter 3:  Data analysis": 
             - "<b>Overview</b>":        'book/ch3_data_analysis/ch3_overview.md'
             - "-- Panda":                book/ch3_data_analysis/ch3_panda.md
             - "-- Working with time":    book/ch3_data_analysis/ch3_time.md
             - "-- Missing value":        book/ch3_data_analysis/ch3_missing.md
-            - "-- <em> Challenges </em>": book/ch3_data_analysis/ch3_challengesipynb.ipynb
+            - "-- <em> Challenges </em>": book/ch3_data_analysis/ch3_challenges.ipynb
         - "Chapter 4: Visualization": 
             - "<b>Overview</b>":        'book/ch4_visualization/ch4_overview.md'
             - "-- Matplotlib":           book/ch4_visualization/ch4_matplotlib.md
             - "-- Seaborn":              book/ch4_visualization/ch4_seaborn.md
             - "-- Plotnine":             book/ch4_visualization/ch4_plotnine.md
-            - "-- Boken":                book/ch4_visualization/ch4_boken.md
+            # - "-- Boken":                book/ch4_visualization/ch4_boken.md
       - "Part II:": 
         - "Chapter 5: Working with files":
-          - "<b>Overview</b>":           'book/ch5_file/file_overview.md'
-          - "-- Text files":              book/ch5_file/file_file.md
-          - "-- Storing objects":         book/ch5_file/file_pickle.md
-          - "-- CSV":                     book/ch5_file/file_csv.md
-          - "-- XLSX":                    book/ch5_file/file_xlsx.md
-          - "-- <em> Challenges</em>":    book/ch5_file/file_challenges.md   
+          - "<b>Overview</b>":           'book/ch5_file/ch5_overview.md'  
+          - "-- Text files":              book/ch5_file/ch5_text.md
+          - "-- Storing objects":         book/ch5_file/ch5_pickle.md
+          - "-- CSV":                     book/ch5_file/ch5_csv.md
+          - "-- XLSX":                    book/ch5_file/ch5_xlsx.md
+          - "-- <em> Challenges</em>":    book/ch5_file/ch5_challenges.md   
         - "Chapter 6: OS":
-          - "<b>Overview</b>":            'book/ch6_os/os_overview.md'
-          - "OS":                          book/ch6_os/os_os.md
-          - "Subprocess":                  book/ch6_os/os_subprocess.md
-          - "Sys":                         book/ch6_os/os_sys.md
-          - "-- <em> Challenges</em>":     book/ch6_os/os_challenges.md   
+          - "<b>Overview</b>":            'book/ch6_os/ch6_overview.md'
+          - "-- OS":                          book/ch6_os/ch6_os.md
+          - "-- Subprocess":                  book/ch6_os/ch6_subprocess.md
+          - "-- Sys":                         book/ch6_os/ch6_sys.md
+          - "-- <em> Challenges</em>":     book/ch6_os/ch6_challenges.md   
         - "Chapter 7: Decorator":
-          - "Decorator":                   book/ch7_decorator/decorator.md
+          - "<b>Overview</b>":            'book/ch7_decorator/ch7_overview.md'
+          - "-- Decorator":                   book/ch7_decorator/ch7_decorator.md
         - "Chapter 8: Class":
-          - "-- Class":                    book/ch8_class/class.md
-          - "-- Inheritance":              book/ch8_class/inheritance.md
-          - "-- Operator_overloading":     book/ch8_class/operator_overloading.md
-          - "-- Class_as_decorators":      book/ch8_class/class_as_decorators.md
+          - "<b>Overview</b>":            'book/ch8_class/ch8_overview.md'
+          - "-- Class":                    book/ch8_class/ch8_class.md
+          - "-- Inheritance":              book/ch8_class/ch8_inheritance.md
+          - "-- Operator_overloading":     book/ch8_class/ch8_operator_overloading.md
+          - "-- Class_as_decorators":      book/ch8_class/ch8_class_as_decorators.md
+          - "-- <em> Challenges</em>":     book/ch8_class/ch8_challenges.md   
       - "Part III:": 
-        - "Chapter 9: Scipy":
-          - "-- Scipy":                    book/ch9_scipy/scipy.md
-        - "Chapter 10: Functools": 
-          - "<b>Overview</b>":            'book/ch10_functools/overview.md'
-          - "-- functools":                book/ch10_functools/functools.md
-          - "-- itertools":                book/ch10_functools/itertools.md
-          - "-- generator":                book/ch10_functools/generator.md          
-        - "Chapter 11: Parallel":
-          - "-- Parallel":                 book/ch11_parallel/parallel.md
-        - "Chapter 12: Regex":
-          - "-- Regex":                    book/ch12_regex/regex.md
+        - "Chapter 9: Higher-order functions": 
+          - "<b>Overview</b>":            'book/ch9_high_funcs/ch9_overview.md'
+          - "-- functools":                book/ch9_high_funcs/ch9_functools.md
+          - "-- itertools":                book/ch9_high_funcs/ch9_itertor.md       
+        - "Chapter 10: Multiprocessing":
+          - "<b>Overview</b>":            'book/ch10_multiprocessing/ch10_overview.md'
+          - "-- Multiprocessing":          book/ch10_multiprocessing/ch10_multiprocessing.md
+          - "-- Joblib":                   book/ch10_multiprocessing/ch10_joblib.md
+          - "-- Threading":                book/ch10_multiprocessing/ch10_threading.md
+        - "Chapter 11: Regex":
+          - "<b>Overview</b>":            'book/ch11_regex/ch11_overview.md'
+          - "-- Regex":                    book/ch11_regex/ch11_regex.md
+          - "-- <em> Challenges</em>":     book/ch11_regex/ch11_challenges.md   
       - "Part IV:": 
-        - "Chapter 13: Testing and debugging":
-          - "<em>Overview</em>":          'book/ch13_debugging/overview.md'
-          - '-- Error handling':          'book/ch13_debugging/error_handling.md'
-          - "-- Loggin":                  "book/ch13_debugging/logging.md" 
-          - "-- Debugging":               "book/ch13_debugging/debugging.md"
-        - "Chapter 14: Package":
-          - "<em>Overview</em>":          'book/ch14_package/overview.md'
-          - "-- Package":                 "book/ch14_package/package.md" 
-          - '-- Distribution':            'book/ch14_package/distribution.md'
-        - "Chapter 15: Misc":
-          - "-- Time":                     book/ch15_misc/time.md
-          - "-- SQL":                      book/ch15_misc/sql.md
+        - "Chapter 12: Testing and debugging":
+          - "<em>Overview</em>":          'book/ch12_debugging/ch12_overview.md'
+          - '-- Error handling':          'book/ch12_debugging/ch12_error_handling.md'
+          - "-- Loggin":                  "book/ch12_debugging/ch12_logging.md" 
+          - "-- Debugging":               "book/ch12_debugging/ch12_debugging.md"
+        - "Chapter 13: Package":
+          - "<em>Overview</em>":          'book/ch13_package/ch13_overview.md'
+          - "-- Package":                 "book/ch13_package/ch13_package.md" 
+          - '-- Distribution':            'book/ch13_package/ch13_distribution.md'
+        # - "Chapter 14: Misc":
+        #   - "-- Time":                     book/ch14_misc/ch14_time.md
+        #   - "-- SQL":                      book/ch14_misc/ch14_sql.md
   - Python projects:
     - python_projects/overview.md
     - python_projects/posts/crime-mtl-pattern.md

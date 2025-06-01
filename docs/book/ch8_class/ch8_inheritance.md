@@ -3,10 +3,10 @@ title: Inheritance
 ---
 
 
-
 # Inheritance 
 ## Introduction 
-You transfer the the existing class to a new one, it structure is 
+Inheritance allows a class (called a child or subclass) to inherit attributes and methods from another class (called a parent or base class). This enables code reuse and establishes a hierarchical relationship between classes. In other words, it allows a new class to build upon an existing one, inheriting its structure and behavior.
+
 ```python
 class Parent:
     ...
@@ -15,7 +15,7 @@ class Child(Parent):
     ...
 ```
 
-The new class Child is called a subclass. 
+The new class, Child, is called a subclass.
 
 ```python
 class Stock:
@@ -40,7 +40,7 @@ s.shares
 s.panic()
 ```
 
-IF you need a temporary object from the parent class by the keyword, use the super() function 
+If you need to access a temporary object from the parent class, use the super() function.
 ```python
 class MyStock3(Stock):
     def cost(self):
@@ -54,8 +54,7 @@ s.shares
 s.cost()
 ```
 
-
-If `__init__` is defined, it is essential to initialize the parent. 
+If `__init__` is defined in a subclass, it is essential to initialize the parent class using super().
 
 ```python
 class Stock:
@@ -78,7 +77,7 @@ s = MyStock('GOOG', 100, 490,5)
 s.cost()
 ```
 
-You can inherit from multiple classes, 
+You can inherit from multiple classes in Python, a feature known as multiple inheritance.
 
 ```python
 class Mother:

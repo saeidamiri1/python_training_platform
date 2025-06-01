@@ -34,3 +34,6 @@ colors_set=pickle.load(file)
 prices=pickle.load(file)
 file.close()
 ```
+
+## dill
+The dill library is a drop-in alternative to pickle that can robustly handle function serialization. 
