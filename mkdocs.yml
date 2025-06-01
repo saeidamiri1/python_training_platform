@@ -266,6 +266,8 @@ nav:
     - python_projects/posts/optimization.md
   - Workshop: 
     - "Overview": 'workshop/index.md'
+    - "<b>Part I:</b>": 
+        - "<b>1 Starting with data </b>": workshop/notebooks/01-starting-with-data.ipynb
   # - Work shop:
   #     - "<b> Overview </b>": work_shop/index.md
   #     - "<b>Part I:</b>": 
