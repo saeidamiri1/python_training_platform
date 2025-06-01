@@ -456,67 +456,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://saeidamiri1.github.io/python-training-platform/work_shop/overview/</loc>
-         <lastmod>2025-06-01</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://saeidamiri1.github.io/python-training-platform/work_shop/exercises/01-exercise/</loc>
-         <lastmod>2025-06-01</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://saeidamiri1.github.io/python-training-platform/work_shop/exercises/02-exercise/</loc>
-         <lastmod>2025-06-01</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://saeidamiri1.github.io/python-training-platform/work_shop/exercises/03-exercise/</loc>
-         <lastmod>2025-06-01</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://saeidamiri1.github.io/python-training-platform/work_shop/exercises/04-exercise/</loc>
-         <lastmod>2025-06-01</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://saeidamiri1.github.io/python-training-platform/work_shop/exercises/05-exercise/</loc>
-         <lastmod>2025-06-01</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://saeidamiri1.github.io/python-training-platform/work_shop/exercises/06-exercise/</loc>
-         <lastmod>2025-06-01</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://saeidamiri1.github.io/python-training-platform/work_shop/notebooks/01-starting-with-data/</loc>
-         <lastmod>2025-06-01</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://saeidamiri1.github.io/python-training-platform/work_shop/notebooks/02-working-with-data/</loc>
-         <lastmod>2025-06-01</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://saeidamiri1.github.io/python-training-platform/work_shop/notebooks/03-manipulating-data-frame/</loc>
-         <lastmod>2025-06-01</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://saeidamiri1.github.io/python-training-platform/work_shop/notebooks/04-summarizing/</loc>
-         <lastmod>2025-06-01</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://saeidamiri1.github.io/python-training-platform/work_shop/notebooks/05-merging-data-frame/</loc>
-         <lastmod>2025-06-01</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://saeidamiri1.github.io/python-training-platform/work_shop/notebooks/06-visualization/</loc>
+         <loc>https://saeidamiri1.github.io/python-training-platform/work_shop/</loc>
          <lastmod>2025-06-01</lastmod>
          <changefreq>daily</changefreq>
     </url>

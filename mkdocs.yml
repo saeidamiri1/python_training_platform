@@ -265,7 +265,7 @@ nav:
     - python_projects/posts/crime-mtl-pattern.md
     - python_projects/posts/optimization.md
   - Work shop:
-      - "<b> Overview </b>": work_shop/overview.md
+      - "<b> Overview </b>": work_shop/index.md
       - "<b>Part I:</b>": 
         - "<b>1 Starting with data </b>": work_shop/notebooks/01-starting-with-data.ipynb
         - "<em>1 Exercise</em>": work_shop/exercises/01-exercise.ipynb 
