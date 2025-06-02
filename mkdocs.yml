@@ -280,22 +280,6 @@ nav:
       - "<em>5 Exercise</em>": workshop/exercises/05-exercise.ipynb 
       - "<b>6 Visualization </b>": workshop/notebooks/06-visualization.ipynb
       - "<em>6 Exercise</em>": workshop/exercises/06-exercise.ipynb 
-  # - Work shop:
-  #     - "<b> Overview </b>": work_shop/index.md
-  #     - "<b>Part I:</b>": 
-  #       - "<b>1 Starting with data </b>": work_shop/notebooks/01-starting-with-data.ipynb
-  #       - "<em>1 Exercise</em>": work_shop/exercises/01-exercise.ipynb 
-  #       - "<b>2 Working with data </b>": work_shop/notebooks/02-working-with-data.ipynb
-  #       - "<em>2 Exercise</em>": work_shop/exercises/02-exercise.ipynb 
-  #       - "<b>3 Manipulating data frame </b>": work_shop/notebooks/03-manipulating-data-frame.ipynb 
-  #       - "<em>3 Exercise</em>": work_shop/exercises/03-exercise.ipynb 
-  #     - "<b> Part II: </b>":         
-  #       - "<b>4 Summarizing </b>": work_shop/notebooks/04-summarizing.ipynb
-  #       - "<em>1 Exercise</em>": work_shop/exercises/04-exercise.ipynb 
-  #       - "<b>5 Merging data frame </b>": work_shop/notebooks/05-merging-data-frame.ipynb 
-  #       - "<em>5 Exercise</em>": work_shop/exercises/05-exercise.ipynb 
-  #       - "<b>6 Visualization </b>": work_shop/notebooks/06-visualization.ipynb
-  #       - "<em>6 Exercise</em>": work_shop/exercises/06-exercise.ipynb 
   # - Note:
   #   - note/index.md
   #   - notes/posts/summarizing-data-frame.md
