@@ -22,7 +22,7 @@ This section serves as the foundation of the platform, presenting a series of st
 ### [Python projects](python_projects/overview.md/)
 This section features projects that can be used to learn about Python's applications.
 
-### [Workshop](work_shop/) 
+### [Workshop](workshop/) 
 This workshop offers practical insights and support for those embarking on their data analysis journey with Python.
 
 ### [Concise notes](concise_notes/)
